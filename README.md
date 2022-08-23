@@ -4,6 +4,7 @@ I created and ai that jumps over obstacles.
 There are 2 types of obstacles, the good one(green) and the bad one(red).
 The agent needs to avoid the red one and hit the green one.
 I also gave the jumper agent some rays (eyes) to give extra help.
+I placed these rays vertically so the agent can see the "bad" obstacles as well as the "good" obstacles.
 
 If you take a look at the configuration file you can see at the bottom that I trained the agent for 1000000 steps. 
 The agent still hits the bad obstacle sometimes.
@@ -151,6 +152,7 @@ When this happens I also set the tag of the obstacle to be used in the collision
 	else if (type == ObstacleType.GOOD)
 	{
 		obstacleRenderer.material.SetColor("_Color", Color.green);
+        this.transform.localPosition += new Vector3(0, 4f, 0);
 		this.tag = "good";
 	}
 }

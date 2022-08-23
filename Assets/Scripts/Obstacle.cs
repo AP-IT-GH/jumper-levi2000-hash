@@ -14,17 +14,9 @@ public class Obstacle : MonoBehaviour
     {
         transform.Translate(Vector3.right * Time.deltaTime * speed);
     }
-    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Wall"))
-        {
-            this.SetObstacle();
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Wall"))
         {
             this.SetObstacle();
         }
@@ -52,6 +44,7 @@ public class Obstacle : MonoBehaviour
         else if (type == ObstacleType.GOOD)
         {
             obstacleRenderer.material.SetColor("_Color", Color.green);
+            this.transform.localPosition += new Vector3(0, 4f, 0);
             this.tag = "good";
         }
     }
