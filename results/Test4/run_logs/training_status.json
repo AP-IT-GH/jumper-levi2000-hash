@@ -1,0 +1,56 @@
+{
+    "JumperAgent": {
+        "checkpoints": [
+            {
+                "steps": 1802,
+                "file_path": "results\\Test4\\JumperAgent\\JumperAgent-1802.onnx",
+                "reward": 0.4146341463414634,
+                "creation_time": 1661278464.8310225,
+                "auxillary_file_paths": [
+                    "results\\Test4\\JumperAgent\\JumperAgent-1802.pt"
+                ]
+            },
+            {
+                "steps": 11933,
+                "file_path": "results\\Test4\\JumperAgent\\JumperAgent-11933.onnx",
+                "reward": 0.3888888888888889,
+                "creation_time": 1661278556.5125923,
+                "auxillary_file_paths": [
+                    "results\\Test4\\JumperAgent\\JumperAgent-11933.pt"
+                ]
+            },
+            {
+                "steps": 14075,
+                "file_path": "results\\Test4\\JumperAgent\\JumperAgent-14075.onnx",
+                "reward": null,
+                "creation_time": 1661278738.8990848,
+                "auxillary_file_paths": [
+                    "results\\Test4\\JumperAgent\\JumperAgent-14075.pt"
+                ]
+            },
+            {
+                "steps": 15369,
+                "file_path": "results\\Test4\\JumperAgent\\JumperAgent-15369.onnx",
+                "reward": 0.0,
+                "creation_time": 1661278916.6260052,
+                "auxillary_file_paths": [
+                    "results\\Test4\\JumperAgent\\JumperAgent-15369.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 15369,
+            "file_path": "results\\Test4\\JumperAgent.onnx",
+            "reward": 0.0,
+            "creation_time": 1661278916.6260052,
+            "auxillary_file_paths": [
+                "results\\Test4\\JumperAgent\\JumperAgent-15369.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
